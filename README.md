@@ -1,5 +1,5 @@
 # VisionH
-This app was made for my DBMS project. This app helps to manage and optimise hospital database using IOT(QR codes &amp; RFID Tags) Ongoing project
+An app made for my DBMS project. This app helps to manage and optimise hospital database using IOT(QR codes &amp; RFID Tags) Ongoing project
 
 
 
