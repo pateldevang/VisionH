@@ -63,7 +63,7 @@
                                 <color key="backgroundColor" white="0.79692925349999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0K-n2-FdI">
-                                <rect key="frame" x="98" y="458" width="179" height="35"/>
+                                <rect key="frame" x="63" y="458" width="240" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.17254901960784313" green="0.52156862745098043" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Sign up">
@@ -79,7 +79,7 @@
                                 <state key="normal" title="Button" image="Screen Shot 2019-10-22 at 4.16.14 PM"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3X-2u-pUp">
-                                <rect key="frame" x="98" y="411" width="179" height="35"/>
+                                <rect key="frame" x="63" y="411" width="240" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.17254901959999999" green="0.52156862749999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Login">
