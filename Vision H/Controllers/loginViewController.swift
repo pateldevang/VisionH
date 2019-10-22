@@ -18,6 +18,10 @@ class loginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Setting up textFields
+        textFieldDelegateSetUp()
+        // Function for tap gesture
+        hideKeyboardWhenTappedAround()
     }
 
     
@@ -37,4 +41,26 @@ class loginViewController: UIViewController {
         
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
+    //MARK:- TextField Delegate Method
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    
+}
+
+
+//MARK: - Extensions
+extension loginViewController: UITextFieldDelegate {
+    
+    //Setup textfield delegates
+    func textFieldDelegateSetUp() {
+        email.delegate = self
+        pass.delegate = self
+    }
 }

@@ -12,6 +12,7 @@
 		774910C5235F0C25006B041D /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774910C4235F0C25006B041D /* signUpViewController.swift */; };
 		774910C7235F0F8B006B041D /* patientHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774910C6235F0F8B006B041D /* patientHomeViewController.swift */; };
 		774910C9235F0F97006B041D /* doctorHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774910C8235F0F97006B041D /* doctorHomeViewController.swift */; };
+		774910CD235F1965006B041D /* keyboard+hide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774910CC235F1965006B041D /* keyboard+hide.swift */; };
 		777625B92311AA8A00323C29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777625B82311AA8A00323C29 /* AppDelegate.swift */; };
 		777625BE2311AA8A00323C29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 777625BC2311AA8A00323C29 /* Main.storyboard */; };
 		777625C02311AA8C00323C29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 777625BF2311AA8C00323C29 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		774910C4235F0C25006B041D /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		774910C6235F0F8B006B041D /* patientHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patientHomeViewController.swift; sourceTree = "<group>"; };
 		774910C8235F0F97006B041D /* doctorHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doctorHomeViewController.swift; sourceTree = "<group>"; };
+		774910CC235F1965006B041D /* keyboard+hide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "keyboard+hide.swift"; sourceTree = "<group>"; };
 		777625B52311AA8A00323C29 /* Vision H.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vision H.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		777625B82311AA8A00323C29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		777625BD2311AA8A00323C29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				774910C6235F0F8B006B041D /* patientHomeViewController.swift */,
 				774910C4235F0C25006B041D /* signUpViewController.swift */,
 				774910C2235F0B34006B041D /* loginViewController.swift */,
+				774910CC235F1965006B041D /* keyboard+hide.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				774910CD235F1965006B041D /* keyboard+hide.swift in Sources */,
 				774910C3235F0B34006B041D /* loginViewController.swift in Sources */,
 				777625B92311AA8A00323C29 /* AppDelegate.swift in Sources */,
 				774910C9235F0F97006B041D /* doctorHomeViewController.swift in Sources */,
