@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1D22B8A8C8F1259AFC4B9F76 /* Pods_Vision_H.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E06F1425BAC57F2CAE28657 /* Pods_Vision_H.framework */; };
+		774910C3235F0B34006B041D /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774910C2235F0B34006B041D /* loginViewController.swift */; };
+		774910C5235F0C25006B041D /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774910C4235F0C25006B041D /* signUpViewController.swift */; };
+		774910C7235F0F8B006B041D /* patientHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774910C6235F0F8B006B041D /* patientHomeViewController.swift */; };
+		774910C9235F0F97006B041D /* doctorHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774910C8235F0F97006B041D /* doctorHomeViewController.swift */; };
 		777625B92311AA8A00323C29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777625B82311AA8A00323C29 /* AppDelegate.swift */; };
-		777625BB2311AA8A00323C29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777625BA2311AA8A00323C29 /* ViewController.swift */; };
 		777625BE2311AA8A00323C29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 777625BC2311AA8A00323C29 /* Main.storyboard */; };
 		777625C02311AA8C00323C29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 777625BF2311AA8C00323C29 /* Assets.xcassets */; };
 		777625C32311AA8C00323C29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 777625C12311AA8C00323C29 /* LaunchScreen.storyboard */; };
@@ -19,9 +22,12 @@
 /* Begin PBXFileReference section */
 		04ED19F38B20207382371FB9 /* Pods-Vision H.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vision H.debug.xcconfig"; path = "Target Support Files/Pods-Vision H/Pods-Vision H.debug.xcconfig"; sourceTree = "<group>"; };
 		3E06F1425BAC57F2CAE28657 /* Pods_Vision_H.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vision_H.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		774910C2235F0B34006B041D /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		774910C4235F0C25006B041D /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
+		774910C6235F0F8B006B041D /* patientHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patientHomeViewController.swift; sourceTree = "<group>"; };
+		774910C8235F0F97006B041D /* doctorHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doctorHomeViewController.swift; sourceTree = "<group>"; };
 		777625B52311AA8A00323C29 /* Vision H.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vision H.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		777625B82311AA8A00323C29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		777625BA2311AA8A00323C29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		777625BD2311AA8A00323C29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		777625BF2311AA8C00323C29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		777625C22311AA8C00323C29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,8 +54,27 @@
 				04ED19F38B20207382371FB9 /* Pods-Vision H.debug.xcconfig */,
 				9B3BBD8EFC5B6EE1D5FB13CB /* Pods-Vision H.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		774910CA235F128E006B041D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				774910C8235F0F97006B041D /* doctorHomeViewController.swift */,
+				774910C6235F0F8B006B041D /* patientHomeViewController.swift */,
+				774910C4235F0C25006B041D /* signUpViewController.swift */,
+				774910C2235F0B34006B041D /* loginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		774910CB235F1297006B041D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				777625C12311AA8C00323C29 /* LaunchScreen.storyboard */,
+				777625BC2311AA8A00323C29 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		777625AC2311AA8A00323C29 = {
@@ -74,10 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				777625B82311AA8A00323C29 /* AppDelegate.swift */,
-				777625BA2311AA8A00323C29 /* ViewController.swift */,
-				777625BC2311AA8A00323C29 /* Main.storyboard */,
+				774910CB235F1297006B041D /* Views */,
+				774910CA235F128E006B041D /* Controllers */,
 				777625BF2311AA8C00323C29 /* Assets.xcassets */,
-				777625C12311AA8C00323C29 /* LaunchScreen.storyboard */,
 				777625C42311AA8C00323C29 /* Info.plist */,
 				77AF84A52311AD6E0074A03C /* GoogleService-Info.plist */,
 			);
@@ -217,8 +241,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				777625BB2311AA8A00323C29 /* ViewController.swift in Sources */,
+				774910C3235F0B34006B041D /* loginViewController.swift in Sources */,
 				777625B92311AA8A00323C29 /* AppDelegate.swift in Sources */,
+				774910C9235F0F97006B041D /* doctorHomeViewController.swift in Sources */,
+				774910C5235F0C25006B041D /* signUpViewController.swift in Sources */,
+				774910C7235F0F8B006B041D /* patientHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
