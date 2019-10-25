@@ -325,6 +325,17 @@
                                     <action selector="pickerAction:" destination="444-Ib-Cfl" eventType="valueChanged" id="rAS-Hb-BdW"/>
                                 </connections>
                             </datePicker>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RXX-OU-4lU">
+                                <rect key="frame" x="0.0" y="63" width="375" height="522"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sucess" translatesAutoresizingMaskIntoConstraints="NO" id="feF-pA-IYY">
+                                        <rect key="frame" x="37" y="147" width="301" height="173"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -336,6 +347,7 @@
                     <connections>
                         <outlet property="datePicker" destination="nc6-uz-3tB" id="xTh-3r-4w0"/>
                         <outlet property="datelabel" destination="ge8-jX-JXH" id="Bd9-CO-ZT7"/>
+                        <outlet property="sucessView" destination="RXX-OU-4lU" id="PEd-Ds-UxG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0bB-zy-b0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -459,6 +471,7 @@
         <image name="doctor" width="151" height="124"/>
         <image name="presc" width="405" height="158"/>
         <image name="rcorner" width="101" height="50"/>
+        <image name="sucess" width="462" height="267"/>
         <image name="welcome" width="160" height="34"/>
     </resources>
 </document>

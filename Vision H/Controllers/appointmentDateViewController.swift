@@ -10,12 +10,12 @@ import UIKit
 
 class appointmentDateViewController: UIViewController {
 
+    @IBOutlet weak var sucessView: UIView!
     @IBOutlet weak var datelabel: UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        sucessView.isHidden = true
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -33,12 +33,15 @@ class appointmentDateViewController: UIViewController {
     }
     
     @IBAction func datePickerChanged(_ sender: Any) {
+        sucessView.isHidden = false
         
     }
     
     
     @IBAction func back(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        let homeView = self.storyboard?.instantiateViewController(withIdentifier: "patientHomeViewController") as! patientHomeViewController
+        self.present(homeView, animated: true, completion: nil)
+        print("Success! to patient!")
     }
     
     
