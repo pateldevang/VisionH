@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1D22B8A8C8F1259AFC4B9F76 /* Pods_Vision_H.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E06F1425BAC57F2CAE28657 /* Pods_Vision_H.framework */; };
+		772BD2342362CF2200E53180 /* appointmentDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BD2332362CF2200E53180 /* appointmentDateViewController.swift */; };
+		772BD2362362D2D300E53180 /* appointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BD2352362D2D300E53180 /* appointmentViewController.swift */; };
 		774910C3235F0B34006B041D /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774910C2235F0B34006B041D /* loginViewController.swift */; };
 		774910C5235F0C25006B041D /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774910C4235F0C25006B041D /* signUpViewController.swift */; };
 		774910C7235F0F8B006B041D /* patientHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774910C6235F0F8B006B041D /* patientHomeViewController.swift */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		04ED19F38B20207382371FB9 /* Pods-Vision H.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vision H.debug.xcconfig"; path = "Target Support Files/Pods-Vision H/Pods-Vision H.debug.xcconfig"; sourceTree = "<group>"; };
 		3E06F1425BAC57F2CAE28657 /* Pods_Vision_H.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vision_H.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		772BD2332362CF2200E53180 /* appointmentDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appointmentDateViewController.swift; sourceTree = "<group>"; };
+		772BD2352362D2D300E53180 /* appointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appointmentViewController.swift; sourceTree = "<group>"; };
 		774910C2235F0B34006B041D /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		774910C4235F0C25006B041D /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		774910C6235F0F8B006B041D /* patientHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patientHomeViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 		774910CA235F128E006B041D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				772BD2332362CF2200E53180 /* appointmentDateViewController.swift */,
+				772BD2352362D2D300E53180 /* appointmentViewController.swift */,
 				774910C8235F0F97006B041D /* doctorHomeViewController.swift */,
 				774910C6235F0F8B006B041D /* patientHomeViewController.swift */,
 				774910C4235F0C25006B041D /* signUpViewController.swift */,
@@ -244,6 +250,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				772BD2362362D2D300E53180 /* appointmentViewController.swift in Sources */,
+				772BD2342362CF2200E53180 /* appointmentDateViewController.swift in Sources */,
 				774910CD235F1965006B041D /* keyboard+hide.swift in Sources */,
 				774910C3235F0B34006B041D /* loginViewController.swift in Sources */,
 				777625B92311AA8A00323C29 /* AppDelegate.swift in Sources */,

@@ -140,15 +140,13 @@
                                 <rect key="frame" x="67" y="40" width="240" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5LB-0L-SFV">
-                                <rect key="frame" x="2" y="9" width="57" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="arow"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqq-ll-dOW">
                                 <rect key="frame" x="16" y="155" width="343" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="booka"/>
+                                <connections>
+                                    <segue destination="FdR-7s-8X7" kind="show" id="Bl4-9D-xoV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjE-Ta-wdY">
                                 <rect key="frame" x="16" y="451" width="343" height="109"/>
@@ -167,12 +165,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qr0-Zv-R7h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1876" y="773.16341829085468"/>
+            <point key="canvasLocation" x="1777" y="789"/>
         </scene>
-        <!--View Controller-->
+        <!--Appointment View Controller-->
         <scene sceneID="wKS-8m-ucq">
             <objects>
-                <viewController id="FdR-7s-8X7" sceneMemberID="viewController">
+                <viewController id="FdR-7s-8X7" customClass="appointmentViewController" customModule="Vision_H" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Onc-Kl-VsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -189,6 +187,9 @@
                                 <rect key="frame" x="10" y="12" width="57" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arow"/>
+                                <connections>
+                                    <action selector="back:" destination="FdR-7s-8X7" eventType="touchUpInside" id="PKo-lt-s57"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="doc" translatesAutoresizingMaskIntoConstraints="NO" id="hg8-ai-gZX">
                                 <rect key="frame" x="24" y="50" width="327" height="107"/>
@@ -260,6 +261,7 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Eg-ds-l1Q"/>
+                                    <segue destination="444-Ib-Cfl" kind="show" id="iM9-Ug-GUW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -269,7 +271,76 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EU6-Z8-jQq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2752.8000000000002" y="772.26386806596713"/>
+            <point key="canvasLocation" x="2650" y="790"/>
+        </scene>
+        <!--Appointment Date View Controller-->
+        <scene sceneID="gVS-Ic-lVc">
+            <objects>
+                <viewController id="444-Ib-Cfl" customClass="appointmentDateViewController" customModule="Vision_H" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hiq-V1-oZp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rcorner" translatesAutoresizingMaskIntoConstraints="NO" id="BjO-kC-DhJ">
+                                <rect key="frame" x="258" y="0.0" width="132" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="buttom" translatesAutoresizingMaskIntoConstraints="NO" id="rtk-Ke-MNa">
+                                <rect key="frame" x="0.0" y="610" width="375" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljs-Mn-DaZ">
+                                <rect key="frame" x="10" y="12" width="57" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="arow"/>
+                                <connections>
+                                    <action selector="back:" destination="444-Ib-Cfl" eventType="touchUpInside" id="KQQ-Hg-DPM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyQ-H8-i30">
+                                <rect key="frame" x="64" y="515" width="240" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.17254901959999999" green="0.52156862749999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="datePickerChanged:" destination="444-Ib-Cfl" eventType="touchUpInside" id="aPY-CV-6ks"/>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lho-Bk-ITd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MM/DD/YY HH:MM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ge8-jX-JXH">
+                                <rect key="frame" x="114" y="73" width="147" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="nc6-uz-3tB">
+                                <rect key="frame" x="27.5" y="186" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="593678200.71900797">
+                                    <!--2019-10-25 06:36:40 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="pickerAction:" destination="444-Ib-Cfl" eventType="valueChanged" id="rAS-Hb-BdW"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nc6-uz-3tB" firstAttribute="centerX" secondItem="hiq-V1-oZp" secondAttribute="centerX" id="6mf-tY-Wil"/>
+                            <constraint firstItem="nc6-uz-3tB" firstAttribute="centerY" secondItem="hiq-V1-oZp" secondAttribute="centerY" constant="-39.5" id="qjZ-4m-40F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="304-E0-NgP"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="nc6-uz-3tB" id="xTh-3r-4w0"/>
+                        <outlet property="datelabel" destination="ge8-jX-JXH" id="Bd9-CO-ZT7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0bB-zy-b0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3519.1999999999998" y="772.26386806596713"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="KlJ-dF-HLL">
