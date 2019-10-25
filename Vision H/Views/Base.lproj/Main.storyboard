@@ -381,8 +381,24 @@
                                 <rect key="frame" x="0.0" y="63" width="375" height="522"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sucess" translatesAutoresizingMaskIntoConstraints="NO" id="feF-pA-IYY">
-                                        <rect key="frame" x="37" y="147" width="301" height="173"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Appointment sucessful" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4B2-ai-r3M">
+                                        <rect key="frame" x="37" y="37" width="300" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.17254901959999999" green="0.52156862749999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scan QR for more" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c58-2z-KmF">
+                                        <rect key="frame" x="37" y="411" width="300" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.17254901959999999" green="0.52156862749999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="qr" translatesAutoresizingMaskIntoConstraints="NO" id="6wD-K0-hxA">
+                                        <rect key="frame" x="52" y="182" width="270" height="158"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -404,7 +420,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0bB-zy-b0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3522" y="788"/>
+            <point key="canvasLocation" x="3541.5999999999999" y="787.55622188905556"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="KlJ-dF-HLL">
@@ -523,8 +539,8 @@
         <image name="doctor" width="151" height="124"/>
         <image name="presc" width="405" height="158"/>
         <image name="profile" width="305" height="375"/>
+        <image name="qr" width="146" height="141"/>
         <image name="rcorner" width="101" height="50"/>
-        <image name="sucess" width="462" height="267"/>
         <image name="welcome" width="160" height="34"/>
     </resources>
 </document>
