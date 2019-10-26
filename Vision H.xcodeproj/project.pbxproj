@@ -13,6 +13,7 @@
 		772BD2382362D82300E53180 /* doctorProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BD2372362D82300E53180 /* doctorProfileViewController.swift */; };
 		772BEC94236445C10088FAB6 /* todayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BEC93236445C10088FAB6 /* todayViewController.swift */; };
 		772BEC96236450A60088FAB6 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 772BEC95236450A60088FAB6 /* SF-Pro-Text-Medium.otf */; };
+		772BEC982364539A0088FAB6 /* apppointQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BEC972364539A0088FAB6 /* apppointQRViewController.swift */; };
 		774910C3235F0B34006B041D /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774910C2235F0B34006B041D /* loginViewController.swift */; };
 		774910C5235F0C25006B041D /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774910C4235F0C25006B041D /* signUpViewController.swift */; };
 		774910C7235F0F8B006B041D /* patientHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774910C6235F0F8B006B041D /* patientHomeViewController.swift */; };
@@ -34,6 +35,7 @@
 		772BD2372362D82300E53180 /* doctorProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doctorProfileViewController.swift; sourceTree = "<group>"; };
 		772BEC93236445C10088FAB6 /* todayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todayViewController.swift; sourceTree = "<group>"; };
 		772BEC95236450A60088FAB6 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		772BEC972364539A0088FAB6 /* apppointQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apppointQRViewController.swift; sourceTree = "<group>"; };
 		774910C2235F0B34006B041D /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		774910C4235F0C25006B041D /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		774910C6235F0F8B006B041D /* patientHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patientHomeViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 		774910CA235F128E006B041D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				772BEC972364539A0088FAB6 /* apppointQRViewController.swift */,
 				772BEC93236445C10088FAB6 /* todayViewController.swift */,
 				776630AD23635B0000989E02 /* prescriptionViewController.swift */,
 				772BD2372362D82300E53180 /* doctorProfileViewController.swift */,
@@ -273,6 +276,7 @@
 				776630AE23635B0000989E02 /* prescriptionViewController.swift in Sources */,
 				774910C9235F0F97006B041D /* doctorHomeViewController.swift in Sources */,
 				774910C5235F0C25006B041D /* signUpViewController.swift in Sources */,
+				772BEC982364539A0088FAB6 /* apppointQRViewController.swift in Sources */,
 				774910C7235F0F8B006B041D /* patientHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

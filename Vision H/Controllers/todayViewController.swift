@@ -22,6 +22,7 @@ class todayViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.table.tableFooterView = UIView()
+        table.reloadData()
     }
     
     override var prefersStatusBarHidden: Bool {
