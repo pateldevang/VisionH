@@ -302,13 +302,16 @@
                                 <rect key="frame" x="16" y="279" width="343" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="booka"/>
+                                <connections>
+                                    <segue destination="kpe-Ae-nnR" kind="show" id="Mz3-ej-cpt"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6IU-FC-kz7">
                                 <rect key="frame" x="138" y="306" width="148" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Inventory" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuU-qq-Skd">
-                                        <rect key="frame" x="20" y="17" width="71" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Equipment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuU-qq-Skd">
+                                        <rect key="frame" x="20" y="17" width="83" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -803,4 +806,7 @@
         <image name="rcorner" width="101" height="50"/>
         <image name="welcome" width="160" height="34"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Mz3-ej-cpt"/>
+    </inferredMetricsTieBreakers>
 </document>
