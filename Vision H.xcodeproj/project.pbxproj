@@ -28,6 +28,8 @@
 		77D335DA2372B052008B9C75 /* RSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D335D92372B052008B9C75 /* RSA.swift */; };
 		77D335DC2372FA83008B9C75 /* updateFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D335DB2372FA83008B9C75 /* updateFunc.swift */; };
 		77D335DE23732A39008B9C75 /* equipQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D335DD23732A39008B9C75 /* equipQRViewController.swift */; };
+		77D335E02373339C008B9C75 /* inventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D335DF2373339C008B9C75 /* inventoryViewController.swift */; };
+		77D335E223733BAE008B9C75 /* inventoryInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D335E123733BAE008B9C75 /* inventoryInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		77D335D92372B052008B9C75 /* RSA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSA.swift; sourceTree = "<group>"; };
 		77D335DB2372FA83008B9C75 /* updateFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateFunc.swift; sourceTree = "<group>"; };
 		77D335DD23732A39008B9C75 /* equipQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = equipQRViewController.swift; sourceTree = "<group>"; };
+		77D335DF2373339C008B9C75 /* inventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inventoryViewController.swift; sourceTree = "<group>"; };
+		77D335E123733BAE008B9C75 /* inventoryInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inventoryInfoViewController.swift; sourceTree = "<group>"; };
 		9B3BBD8EFC5B6EE1D5FB13CB /* Pods-Vision H.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vision H.release.xcconfig"; path = "Target Support Files/Pods-Vision H/Pods-Vision H.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +86,8 @@
 		774910CA235F128E006B041D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				77D335E123733BAE008B9C75 /* inventoryInfoViewController.swift */,
+				77D335DF2373339C008B9C75 /* inventoryViewController.swift */,
 				77D335DD23732A39008B9C75 /* equipQRViewController.swift */,
 				77D335D92372B052008B9C75 /* RSA.swift */,
 				772BEC972364539A0088FAB6 /* apppointQRViewController.swift */,
@@ -278,10 +284,12 @@
 				772BD2382362D82300E53180 /* doctorProfileViewController.swift in Sources */,
 				772BD2342362CF2200E53180 /* appointmentDateViewController.swift in Sources */,
 				774910CD235F1965006B041D /* keyboard+hide.swift in Sources */,
+				77D335E02373339C008B9C75 /* inventoryViewController.swift in Sources */,
 				774910C3235F0B34006B041D /* loginViewController.swift in Sources */,
 				777625B92311AA8A00323C29 /* AppDelegate.swift in Sources */,
 				776630AE23635B0000989E02 /* prescriptionViewController.swift in Sources */,
 				774910C9235F0F97006B041D /* doctorHomeViewController.swift in Sources */,
+				77D335E223733BAE008B9C75 /* inventoryInfoViewController.swift in Sources */,
 				774910C5235F0C25006B041D /* signUpViewController.swift in Sources */,
 				77D335DA2372B052008B9C75 /* RSA.swift in Sources */,
 				772BEC982364539A0088FAB6 /* apppointQRViewController.swift in Sources */,
