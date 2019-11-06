@@ -6,7 +6,7 @@ target 'Vision H' do
   use_frameworks!
 
   # Pods for Vision H
-  pod 'Firebase/Auth'
-  pod 'Firebase/Database'
+	pod 'Alamofire'
+	pod 'SwiftyJSON'
 
 end
