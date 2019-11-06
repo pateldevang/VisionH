@@ -746,7 +746,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.79692925349999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EM1-fG-7eq">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EM1-fG-7eq">
                                 <rect key="frame" x="75" y="354" width="224" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -792,7 +792,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qNe-Vt-X2E"/>
+                                    <action selector="signUp:" destination="fJY-mx-Lxf" eventType="touchUpInside" id="9yx-3J-iwg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzq-F5-dRU">
@@ -810,6 +810,12 @@
                     <navigationItem key="navigationItem" id="0Bj-l2-ECe">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="48l-Wl-0dh"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="cpass" destination="q0e-dn-qAd" id="L15-am-y6q"/>
+                        <outlet property="fname" destination="yAF-iJ-W8v" id="mfz-2J-un5"/>
+                        <outlet property="pass" destination="jD6-zP-wGj" id="VQk-0K-4BI"/>
+                        <outlet property="phnum" destination="EM1-fG-7eq" id="j3N-BD-grj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="etW-Eg-cMC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
