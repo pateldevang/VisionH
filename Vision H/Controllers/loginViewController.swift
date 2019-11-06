@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+var PID = ""
 class loginViewController: UIViewController {
     
     //MARK: - Outlets
@@ -26,6 +26,7 @@ class loginViewController: UIViewController {
     
     //MARK: - Login button action
     @IBAction func loginButton(_ sender: Any) {
+        PID=email.text!
         
         if email.text == "PID001" {
             let homeView = self.storyboard?.instantiateViewController(withIdentifier: "patientHomeViewController") as! patientHomeViewController

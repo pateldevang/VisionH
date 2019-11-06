@@ -8,7 +8,7 @@
 //
 
 import UIKit
-
+var DOCID = ""
 class appointmentViewController: UIViewController {
 
     @IBOutlet weak var phnum: UITextField!
@@ -37,6 +37,9 @@ class appointmentViewController: UIViewController {
         return true
     }
     
+    @IBAction func datec(_ sender: Any) {
+        DOCID = lname.text!
+    }
     
 
 }
