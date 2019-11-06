@@ -26,6 +26,7 @@
 		777625C32311AA8C00323C29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 777625C12311AA8C00323C29 /* LaunchScreen.storyboard */; };
 		77AF84A62311AD6E0074A03C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77AF84A52311AD6E0074A03C /* GoogleService-Info.plist */; };
 		77D335DA2372B052008B9C75 /* RSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D335D92372B052008B9C75 /* RSA.swift */; };
+		77D335DC2372FA83008B9C75 /* updateFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D335DB2372FA83008B9C75 /* updateFunc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		777625C42311AA8C00323C29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77AF84A52311AD6E0074A03C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		77D335D92372B052008B9C75 /* RSA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSA.swift; sourceTree = "<group>"; };
+		77D335DB2372FA83008B9C75 /* updateFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateFunc.swift; sourceTree = "<group>"; };
 		9B3BBD8EFC5B6EE1D5FB13CB /* Pods-Vision H.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vision H.release.xcconfig"; path = "Target Support Files/Pods-Vision H/Pods-Vision H.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 			children = (
 				77D335D92372B052008B9C75 /* RSA.swift */,
 				772BEC972364539A0088FAB6 /* apppointQRViewController.swift */,
+				77D335DB2372FA83008B9C75 /* updateFunc.swift */,
 				772BEC93236445C10088FAB6 /* todayViewController.swift */,
 				776630AD23635B0000989E02 /* prescriptionViewController.swift */,
 				772BD2372362D82300E53180 /* doctorProfileViewController.swift */,
@@ -279,6 +282,7 @@
 				774910C5235F0C25006B041D /* signUpViewController.swift in Sources */,
 				77D335DA2372B052008B9C75 /* RSA.swift in Sources */,
 				772BEC982364539A0088FAB6 /* apppointQRViewController.swift in Sources */,
+				77D335DC2372FA83008B9C75 /* updateFunc.swift in Sources */,
 				774910C7235F0F8B006B041D /* patientHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

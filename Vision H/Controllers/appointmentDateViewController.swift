@@ -57,7 +57,7 @@ class appointmentDateViewController: UIViewController {
         let date = datelabel.text!
         let escapedString = date.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
 //        print(escapedString)
-        let url = "http://localhost:3000/newappointment/\(PID)/\(DOCID)/\(escapedString!)"
+        let url = baseurl+"/newappointment/\(PID)/\(DOCID)/\(escapedString!)"
         print(url)
         Alamofire.request(url, method: .get).responseJSON { (response) in
             if (response.result.isSuccess) {

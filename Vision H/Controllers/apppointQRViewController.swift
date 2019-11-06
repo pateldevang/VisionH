@@ -8,6 +8,8 @@
 
 import UIKit
 import AVFoundation
+import Alamofire
+import SwiftyJSON
 
 class apppointQRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
 
@@ -199,8 +201,8 @@ class apppointQRViewController: UIViewController, AVCaptureMetadataOutputObjects
         alert.addAction(UIAlertAction(title: "Retake", style: .default, handler: { (nil) in
             self.scan()
         }))
-        alert.addAction(UIAlertAction(title: "Attend", style: .default, handler: { (nil) in
-            self.dismiss(animated: true, completion: nil)
+        alert.addAction(UIAlertAction(title: "Attend", style: .default, handler: { (UIAlertAction) in
+            self.update()
         }))
         present(alert,animated: true,completion: nil)
     }

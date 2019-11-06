@@ -13,7 +13,7 @@ class todayViewController: UIViewController{
     
     
     
-    let name = ["Aditya Parmar","Yash Agarwal","Narayan Moorthy","Urmila Pawar","Vasant Hegde"]
+    let name = ["PID001","PID002","PID003","PID004","PID005"]
      private let sectionTitles: [String] = ["  Morning","  Evening"]
     
 

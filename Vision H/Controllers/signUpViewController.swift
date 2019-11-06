@@ -40,7 +40,7 @@ class signUpViewController: UIViewController {
     
     
     @IBAction func signUp(_ sender: Any) {
-        let url = "http://localhost:3000/newuser/\(fname.text!)/\(phnum.text!)"
+        let url = baseurl+"/newuser/\(fname.text!)/\(phnum.text!)"
         print(url)
         Alamofire.request(url, method: .get).responseJSON { (response) in
             if (response.result.isSuccess) {
