@@ -21,21 +21,38 @@ class inventoryViewController: UIViewController {
     private var obID : [String?] = []
     private var qty : [String?] = []
     private var indexPathForPrepareSegue : IndexPath?
+    var refreshControl = UIRefreshControl()
     
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var table: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.table.tableFooterView = UIView()
+        self.table.tableFooterView = UIView()
         
         networking()
         table.reloadData()
+        refreshControl.tintColor = .black
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(refresh), for: UIControl.Event.valueChanged)
+        table.addSubview(refreshControl)
         
-        
+    }
+    
+    // Refresh selector control
+    @objc func refresh(sender:AnyObject) {
+        // Code to refresh table view
+        networking()
+     
     }
     
     
     func networking() {
+        name=[]
+        location=[]
+        qty=[]
+        INVID=[]
+        obID=[]
+        location=[]
         Alamofire.request(baseurl+"/getInventory", method: .get).responseJSON { (response) in
             
             if (response.result.isSuccess) {
@@ -56,6 +73,7 @@ class inventoryViewController: UIViewController {
                     
                 }
                 self.table.reloadData()
+                self.refreshControl.endRefreshing()
             }
             else if((response.error) != nil)
             {
