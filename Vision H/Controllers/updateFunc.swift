@@ -21,6 +21,7 @@ func update()
     Alamofire.request(url, method: .get).responseJSON { (response) in
         if (response.result.isSuccess) {
             let json = JSON(response.result.value!)
+            print(json)
             if json[0]["res"].stringValue == "sucess"{
                 let alert = UIAlertController(title: "Sucess", message: "New account created!", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))

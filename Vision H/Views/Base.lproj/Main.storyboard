@@ -303,7 +303,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="booka"/>
                                 <connections>
-                                    <segue destination="kpe-Ae-nnR" kind="show" id="Mz3-ej-cpt"/>
+                                    <segue destination="WQ8-Al-jUV" kind="show" id="CmF-kR-nIo"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6IU-FC-kz7">
@@ -821,6 +821,76 @@
             </objects>
             <point key="canvasLocation" x="1869.5999999999999" y="42.728635682158924"/>
         </scene>
+        <!--EquipQR View Controller-->
+        <scene sceneID="lWa-B7-XK7">
+            <objects>
+                <viewController id="WQ8-Al-jUV" customClass="equipQRViewController" customModule="Vision_H" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M8g-j2-NFB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rcorner" translatesAutoresizingMaskIntoConstraints="NO" id="8Sa-xy-1IG">
+                                <rect key="frame" x="264" y="0.0" width="132" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4RV-p8-4U6">
+                                <rect key="frame" x="16" y="12" width="57" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="arow"/>
+                                <connections>
+                                    <action selector="back:" destination="WQ8-Al-jUV" eventType="touchUpInside" id="0G0-lx-yl6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mR0-6z-7Vy">
+                                <rect key="frame" x="110.5" y="554.5" width="154" height="39"/>
+                                <color key="backgroundColor" red="1" green="0.69410232839999997" blue="0.0" alpha="0.78836686639999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="8F7-Ou-MZg"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="154" id="uVj-ll-ffe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="retake">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <view alpha="0.69999998807907104" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7F1-TN-79y">
+                                <rect key="frame" x="34" y="179" width="307" height="4"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1142683873" green="0.52822657009999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Focus" translatesAutoresizingMaskIntoConstraints="NO" id="fFA-z3-rU9">
+                                <rect key="frame" x="25" y="171" width="325" height="325"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="325" id="CkK-Nh-KCL"/>
+                                    <constraint firstAttribute="width" constant="325" id="ab1-oO-ywq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fFA-z3-rU9" firstAttribute="centerX" secondItem="mR0-6z-7Vy" secondAttribute="centerX" id="FrS-nn-Ddx"/>
+                            <constraint firstItem="fFA-z3-rU9" firstAttribute="top" secondItem="M8g-j2-NFB" secondAttribute="top" constant="171" id="M1s-Xg-bFX"/>
+                            <constraint firstItem="fFA-z3-rU9" firstAttribute="centerX" secondItem="M8g-j2-NFB" secondAttribute="centerX" id="aYh-0u-bDT"/>
+                            <constraint firstItem="mR0-6z-7Vy" firstAttribute="top" secondItem="fFA-z3-rU9" secondAttribute="bottom" constant="58.5" id="xpN-m3-WuF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oBI-Pn-G5i"/>
+                    </view>
+                    <connections>
+                        <outlet property="QRimageView" destination="fFA-z3-rU9" id="Ce7-9I-pxs"/>
+                        <outlet property="scanButton" destination="mR0-6z-7Vy" id="QMW-SH-ReK"/>
+                        <outlet property="scannerView" destination="7F1-TN-79y" id="lXI-CW-jw8"/>
+                        <outlet property="test2" destination="4RV-p8-4U6" id="wy5-zx-9eW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Epi-ak-sV4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="494" y="1610"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Focus" width="414" height="414"/>
@@ -837,7 +907,4 @@
         <image name="rcorner" width="101" height="50"/>
         <image name="welcome" width="160" height="34"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Mz3-ej-cpt"/>
-    </inferredMetricsTieBreakers>
 </document>

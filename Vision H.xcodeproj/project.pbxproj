@@ -27,6 +27,7 @@
 		77AF84A62311AD6E0074A03C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77AF84A52311AD6E0074A03C /* GoogleService-Info.plist */; };
 		77D335DA2372B052008B9C75 /* RSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D335D92372B052008B9C75 /* RSA.swift */; };
 		77D335DC2372FA83008B9C75 /* updateFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D335DB2372FA83008B9C75 /* updateFunc.swift */; };
+		77D335DE23732A39008B9C75 /* equipQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D335DD23732A39008B9C75 /* equipQRViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		77AF84A52311AD6E0074A03C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		77D335D92372B052008B9C75 /* RSA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSA.swift; sourceTree = "<group>"; };
 		77D335DB2372FA83008B9C75 /* updateFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateFunc.swift; sourceTree = "<group>"; };
+		77D335DD23732A39008B9C75 /* equipQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = equipQRViewController.swift; sourceTree = "<group>"; };
 		9B3BBD8EFC5B6EE1D5FB13CB /* Pods-Vision H.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vision H.release.xcconfig"; path = "Target Support Files/Pods-Vision H/Pods-Vision H.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 		774910CA235F128E006B041D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				77D335DD23732A39008B9C75 /* equipQRViewController.swift */,
 				77D335D92372B052008B9C75 /* RSA.swift */,
 				772BEC972364539A0088FAB6 /* apppointQRViewController.swift */,
 				77D335DB2372FA83008B9C75 /* updateFunc.swift */,
@@ -284,6 +287,7 @@
 				772BEC982364539A0088FAB6 /* apppointQRViewController.swift in Sources */,
 				77D335DC2372FA83008B9C75 /* updateFunc.swift in Sources */,
 				774910C7235F0F8B006B041D /* patientHomeViewController.swift in Sources */,
+				77D335DE23732A39008B9C75 /* equipQRViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
