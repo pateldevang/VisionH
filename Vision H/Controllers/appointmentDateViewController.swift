@@ -10,12 +10,28 @@ import UIKit
 
 class appointmentDateViewController: UIViewController {
 
+    @IBOutlet weak var qrimage: UIImageView!
     @IBOutlet weak var sucessView: UIView!
     @IBOutlet weak var datelabel: UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
+    
+    
+    private var qrcodeImage: CIImage!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         sucessView.isHidden = true
+        let rsa : RSAWrapper? = RSAWrapper()
+        let success : Bool = (rsa?.generateKeyPair(keySize: 2048, privateTag: "in.devangpatel", publicTag: "in.devangpatel"))!
+        if (!success) {
+            print("Failed")
+            return
+        }
+        let test : String = "PID001"
+        let encryption = rsa?.encryptBase64(text: test)
+        print(encryption)
+        qrimage.image = generateQRCode(from: "\(encryption)")
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -43,6 +59,24 @@ class appointmentDateViewController: UIViewController {
         self.present(homeView, animated: true, completion: nil)
         print("Success! to patient!")
     }
+    
+    func generateQRCode(from string: String) -> UIImage? {
+        let data = string.data(using: String.Encoding.ascii)
+        
+        if let filter = CIFilter(name: "CIQRCodeGenerator") {
+            filter.setValue(data, forKey: "inputMessage")
+            let transform = CGAffineTransform(scaleX: 3, y: 3)
+            
+            if let output = filter.outputImage?.transformed(by: transform) {
+                return UIImage(ciImage: output)
+            }
+        }
+        
+        return nil
+    }
+    
+
+
     
     
 }

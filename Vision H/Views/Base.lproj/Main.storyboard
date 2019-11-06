@@ -174,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6oI-19-nhL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1018.4" y="805.54722638680664"/>
+            <point key="canvasLocation" x="-1254" y="806"/>
         </scene>
         <!--Today View Controller-->
         <scene sceneID="sf9-IW-siQ">
@@ -312,6 +312,25 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Equipment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuU-qq-Skd">
                                         <rect key="frame" x="20" y="17" width="83" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EP-FN-qGY">
+                                <rect key="frame" x="16" y="417" width="343" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="booka"/>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HOQ-Nx-gts">
+                                <rect key="frame" x="138" y="444" width="148" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Avialable equipment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voq-vZ-e8g">
+                                        <rect key="frame" x="0.0" y="17" width="154" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -581,6 +600,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="2ue-nU-rAD"/>
                     </view>
+                    <connections>
+                        <outlet property="fname" destination="pvd-bh-dXl" id="wHE-rT-6wr"/>
+                        <outlet property="lname" destination="kdE-xu-K2O" id="8j9-Jf-Hby"/>
+                        <outlet property="phnum" destination="TT4-6O-N0a" id="KZp-iV-6II"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EU6-Z8-jQq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -659,7 +683,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="qr" translatesAutoresizingMaskIntoConstraints="NO" id="6wD-K0-hxA">
-                                        <rect key="frame" x="52" y="182" width="270" height="158"/>
+                                        <rect key="frame" x="52" y="130" width="270" height="262"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -676,6 +700,7 @@
                     <connections>
                         <outlet property="datePicker" destination="nc6-uz-3tB" id="xTh-3r-4w0"/>
                         <outlet property="datelabel" destination="ge8-jX-JXH" id="Bd9-CO-ZT7"/>
+                        <outlet property="qrimage" destination="6wD-K0-hxA" id="g6a-2L-AKs"/>
                         <outlet property="sucessView" destination="RXX-OU-4lU" id="PEd-Ds-UxG"/>
                     </connections>
                 </viewController>
