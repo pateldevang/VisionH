@@ -1,10 +1,10 @@
 # VisionH
-An app made for my DBMS project. This app helps to manage and optimise hospital database using IOT(QR codes &amp; RFID Tags) Ongoing project
+An app made for my DBMS project. This app helps to manage and optimise hospital database using IOT(QR codes &amp; RFID Tags) Ongoing project.
 
 
 
 
-# TODO:
+# Overview:
 
 1. QRcode reader class(swift)
 2. MongoDB backend(Node.js)
@@ -20,3 +20,7 @@ An app made for my DBMS project. This app helps to manage and optimise hospital 
 
 1. Devang Patel (iOS & backend)
 2. Charik Goyal (UI/UX Engineering & web)
+
+
+
+
