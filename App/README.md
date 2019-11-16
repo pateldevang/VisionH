@@ -1,16 +1,16 @@
 # VisionH
-An app made for my DBMS project. This app helps to manage and optimise hospital database using IOT(QR codes &amp; RFID Tags) Ongoing project.
+An app made for DBMS project. This app helps to manage and optimise hospital database using IOT(QR codes &amp; RFID Tags) Ongoing project.
 
 
 
 
 # Overview:
 
-1. QRcode reader class(swift)
+1. iOS app(swift)
 2. MongoDB backend(Node.js)
 3. Website for admin
 4. RFID hardware(RFID tag read/write)
-5. RSA encrytion algorithm(1024 bits)
+5. RSA encrytion algorithm(2048/1024 bits)
 
 
 
